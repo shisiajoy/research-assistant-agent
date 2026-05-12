@@ -18,11 +18,17 @@ This design reflects modern **agent-based architectures** used in real-world AI 
 
 Key Features
 ✅ Autonomous Workflow - 4-node agent system with state management
+
 ✅ Real API Integration - Uses NewsAPI to fetch actual articles
+
 ✅ Smart Analysis - Extracts claims, scores credibility, detects conflicts
+
 ✅ Professional Reports - Generates markdown with proper citations
+
 ✅ Error Handling - Graceful degradation if API fails
+
 ✅ Full Logging - Tracks every step of execution
+
 ✅ Production Ready - Complete documentation and error recovery
 
 
@@ -81,9 +87,13 @@ Result: publication-ready markdown report
 
 
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
+
 Python
+
 OpenAI API
+
 Requests
+
 dotenv
 
