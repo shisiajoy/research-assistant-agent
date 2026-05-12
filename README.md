@@ -98,3 +98,19 @@ Requests
 
 dotenv
 
+
+## 🛠️ Dependencies
+
+1.requests version 2.33.1 - purpose HTTP requests to NewsAPI
+
+2.beautifulsoup version 44.14.3 - purpose HTML parsing & content extraction
+
+3.lxm version l6.1.0 - purpose Fast XML/HTML parser
+
+4.nltk version 3.9.4 - purpose Natural language processing
+
+5.python-dotenv version 1.2.2 - purpose Environment variable management
+
+
+Install all: pip install -r requirements.txt
+
