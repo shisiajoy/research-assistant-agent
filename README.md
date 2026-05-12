@@ -1,57 +1,85 @@
-# 🧠 Research Assistant Agent
+# Research Assistant Agent 🤖
 
-An intelligent, multi-step AI system that automates research workflows — from query understanding to structured report generation.
+An autonomous AI research agent that automatically researches topics, fetches from multiple sources, synthesizes findings, and generates comprehensive reports.
 
 
-## 🚀 Overview
+## 🎯 Overview
 
-This agent implements a **multi-node AI agent pipeline** that mimics how real research is done:
+This is a complete multi-agent system that demonstrates autonomous research automation. The agent:
 
-1. Understand the query  
-2. Search for information  
-3. Extract key insights  
-4. Generate a structured report  
+1. Parses your research topic and extracts keywords
+2. Searches multiple sources using NewsAPI
+3. Analyzes findings and detects conflicts
+4. Generates professional markdown reports with citations
 
-This design reflects modern **agent-based architectures** used in real-world AI systems, where tasks are broken into specialized steps rather than handled by a single model. :contentReference[oaicite:0]{index=0}  
+   
+This design reflects modern **agent-based architectures** used in real-world AI systems, where tasks are broken into specialized steps rather than handled by a single model.
+
+
+Key Features
+✅ Autonomous Workflow - 4-node agent system with state management
+✅ Real API Integration - Uses NewsAPI to fetch actual articles
+✅ Smart Analysis - Extracts claims, scores credibility, detects conflicts
+✅ Professional Reports - Generates markdown with proper citations
+✅ Error Handling - Graceful degradation if API fails
+✅ Full Logging - Tracks every step of execution
+✅ Production Ready - Complete documentation and error recovery
+
 
 ---
 
-## 🏗️ Architecture
+## 📊 System Architecture
+
+INPUT: Research Topic
+  ↓
+[NODE 1] Parse Topic
+  └─ Extract keywords & subtopics
+  ↓
+[NODE 2] Multi-Source Search
+  └─ Search NewsAPI + Fetch content
+  ↓
+[NODE 3] Analyze & Synthesize
+  └─ Extract claims + Score confidence
+  ↓
+[NODE 4] Generate Report
+  └─ Create markdown with citations
+  ↓
+OUTPUT: Comprehensive Research Report (Markdown)
 
 
-User Query
-↓
-[Node 1] Parse Query
-↓
-[Node 2] Web Search
-↓
-[Node 3] Summarization (LLM)
-↓
-[Node 4] Report Generation (LLM)
-↓
-Final Research Report
+## 📊 Features & Capabilities
+Node 1: Parse Topic ✅
+
+Extract keywords from research topic
+Identify subtopics
+Create search strategy
+Example: "Benefits of renewable energy" → ["benefits", "renewable", "energy"]
+
+Node 2: Multi-Source Search ✅
+
+Search NewsAPI for articles
+Fetch and parse content
+Score source credibility
+Handle API failures gracefully
+Result: 10-20 sources with credibility scores
+
+Node 3: Analyze & Synthesize ✅
+
+Extract key claims from sources
+Calculate confidence scores
+Detect conflicting information
+Categorize findings by topic
+Result: 20-30 synthesized findings
+
+Node 4: Generate Report ✅
+
+Organize findings by category
+Create proper citations
+Format as professional markdown
+Add execution statistics
+Result: publication-ready markdown report
 
 
-## 🧩 Key Features
-
-- 🔍 Automated web search
-- 🧠 LLM-powered summarization
-- 🧾 Structured report generation
-- ⚙️ Modular node-based design
-- 🔄 Extendable pipeline architecture
-
-
-🧠 How It Works
-
-This system follows a pipeline-based agent design, where each node has a specialized role:
-
-Node	Responsibility
-Parse	Cleans and interprets user input
-Search	Retrieves relevant information
-Summarize	Extracts key insights
-Report	Produces structured output
-
-This mirrors modern research agents that separate planning, execution, and synthesis for better reliability.
 
 🛠️ Tech Stack
 Python
