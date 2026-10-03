@@ -1,4 +1,4 @@
-# Research Assistant Agent 🤖
+# Research Agent 🤖
 
 An autonomous AI research agent that automatically researches topics, fetches from multiple sources, synthesizes findings, and generates comprehensive reports.
 
